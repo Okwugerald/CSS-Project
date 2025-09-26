@@ -5,10 +5,20 @@
 }
 body{
     background-color: #a1c3ff;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    
+    font-family: Arial, Helvetica, sans-serif;  
 }
+
+@media (max-width: 500px) {
+    .container{
+        flex-direction: column; 
+        
+    }
+    .container1{
+        flex-direction: column;
+    }
+}
+    
+
 #nav{
     background-color: rgb(110, 89, 250);
     width: 100%;
@@ -18,8 +28,9 @@ body{
     
 }
 .container{
-    width: 1100px;
-    margin: 0 auto;
+    min-width: auto;
+    margin: 0px 100px;
+    
 }
 #nav .container{
     display: flex;
@@ -47,14 +58,19 @@ body{
 }
 #hero{
     background-color: rgb(36, 36, 218);
+    
 }
 #hero .container{
     display: flex;
+    min-height: 400px;
+    
+
 }
 #hero .container .hero-content{
-    display: flex;
+    
     flex-direction: column;
     justify-content: center;
+    display: flex;
 }
 .hero-content{
     font-size: large;
@@ -66,6 +82,8 @@ body{
 .hero-image img{
     height: 400px;
     align-self: auto;
+    flex-wrap: wrap;
+    
 }
 .container1{
     display: flex;
