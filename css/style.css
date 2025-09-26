@@ -8,13 +8,17 @@ body{
     font-family: Arial, Helvetica, sans-serif;  
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .container{
         flex-direction: column; 
         
     }
     .container1{
         flex-direction: column;
+        align-items: center;
+    }
+    img{
+        justify-self: center;
     }
 }
     
@@ -81,9 +85,7 @@ body{
 }
 .hero-image img{
     height: 400px;
-    align-self: auto;
-    flex-wrap: wrap;
-    
+    justify-self: center;
 }
 .container1{
     display: flex;
